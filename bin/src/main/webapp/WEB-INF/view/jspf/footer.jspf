@@ -1,0 +1,14 @@
+<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/chart.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/toolkit.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/application.js"></script>
+<script>
+	// execute/clear BS loaders for docs
+	$(function() {
+		if (window.BS && window.BS.loader && window.BS.loader.length) {
+			while (BS.loader.length) {
+				(BS.loader.pop())()
+			}
+		}
+	})
+</script>

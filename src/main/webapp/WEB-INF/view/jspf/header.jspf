@@ -1,0 +1,32 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sec"
+	uri="http://www.springframework.org/security/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<!-- Bootstrap core CSS -->
+<!-- <link -->
+<%-- 	href="${pageContext.request.contextPath}/resources/css/bootstrap.css" --%>
+<!-- 	rel="stylesheet"> -->
+
+<!-- Custom styles for this template -->
+<!-- <link -->
+<%-- 	href="${pageContext.request.contextPath}/resources/css/bootswatch.less" --%>
+<!-- 	rel="stylesheet"> -->
+
+<!-- <link -->
+<%-- 	href="${pageContext.request.contextPath}/resources/css/variables.less" --%>
+<!-- 	rel="stylesheet"> -->
+
+<%-- <link href="${pageContext.request.contextPath}/resources/css/panel.css" --%>
+<!-- 	rel="stylesheet"> -->
+
+<link
+	href="${pageContext.request.contextPath}/resources/css/application.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/css/toolkit.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/docs.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/main.css"
+	rel="stylesheet">
