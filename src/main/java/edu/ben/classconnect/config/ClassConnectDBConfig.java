@@ -19,8 +19,8 @@ import edu.ben.classconnect.entities.User;
 @EnableTransactionManagement
 @ComponentScan("edu.ben.classconnect")
 public class ClassConnectDBConfig {
-//	@Value("${db.driver}")
-//	private String DB_DRIVER;
+	@Value("${db.driver}")
+	private String DB_DRIVER;
 
 	@Value("${db.password}")
 	private String DB_PASSWORD;
@@ -57,13 +57,12 @@ public class ClassConnectDBConfig {
 
 		ComboPooledDataSource dataSource = new ComboPooledDataSource("savaman");
 
-		// try {
-		// dataSource.setDriverClass(DB_DRIVER);
-		// } catch (PropertyVetoException pve) {
-		// System.out.println("Cannot load datasource driver (" + DB_DRIVER + ") : " +
-		// pve.getMessage());
-		// return null;
-		// }
+		try {
+			dataSource.setDriverClass(DB_DRIVER);
+		} catch (PropertyVetoException pve) {
+			System.out.println("Cannot load datasource driver (" + DB_DRIVER + ") : " + pve.getMessage());
+			return null;
+		}
 		dataSource.setJdbcUrl(DB_URL);
 		dataSource.setUser(DB_USERNAME);
 		dataSource.setPassword(DB_PASSWORD);
