@@ -76,7 +76,11 @@
 			<version>${springsecurity.version}</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4.1208</version>
+		</dependency>
 
 
 		<!-- Servlet, JSP and JSTL support -->
